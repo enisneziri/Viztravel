@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viz Travel</title>
+    <link rel="stylesheet" href="/pages/csspages/style.css">
+    <!----------style.css files--------------------------->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="/img/icons/viz.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <!-----------------------bootstrap links------------------------------------------------>
+    <script src="/pages/javascript/index.js"></script>
+    <!-----------javascript files----------->  
+    
+</head>
+<body onbeforeunload="Welcome()">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background:#000;">
+            <div class="container-fluid" style="background:#000;">
+              <a class="navbar-brand text-light" onclick="window.location.reload(true);" href="#"><i class="bi bi-geo-alt" style="color:#FF8000"></i> Viz Travel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="/pages/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-right text-light" href="/pages/flight.html">Air Travel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="/pages/bus.html">Bus Travel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-right text-light" href="/pages/taxi.html">Taxi Travel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-right text-light" href="/pages/reservation.html">Online Reservation</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-----------------------------------------Nav BAR--------------------------------------------------------->
+    <div class="modal fade" role="dialog" id="HelloMan">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------------------------HELLO MODAL------------------------------------------->
+      <video id="ocScreencapVideo" class="video" width="100%" loop="loop" autoplay="true" onload="window.location.reload(true);">
+        <source src="/img/video.mp4" type="video/mp4">
+      </video>
+      <!----------------------------------THE VIDEO AT THE BEGINING--------------------------------------->
+    <div class="container">
+      <div class="row"id="firstRow" >
+        <div class="col-4">
+          <a href="#flight">
+          <img src="/img/planes/plane.jpg" class="img-thumbnail shadow p-2 mb-5 rounded firstnow"  width="100%" height="100%" alt="Air Travel" srcset="">
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="#bus">
+          <img src="/img/bus/bus.png" class="img-thumbnail shadow p-2 mb-5 rounded" width="100%" height="100%" alt="Bus Travel" srcset="">
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="#taxi">
+          <img src="/img/taxi/taxi.jpg" class="img-thumbnail shadow p-2 mb-5 rounded" width="100%" height="100%" alt="Taxi Travel" srcset="">
+          </a>
+        </div>
+      </div>
+   </div>
+   <!--------------------------------------The travel sections-------------------------------------------------->
+
+  <div class="container shadow p-3 mb-5 rounded bg-light">
+    <h1 class="text-center h1Sections" id="flight">Flight</h1>
+    <div class="row">
+      <div class="col-5">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade shadow-lg p-3 mb-5 rounded" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/planes/plane 1.png" class="d-block w-100 rounded" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/planes/plane 2.png" class="d-block w-100 rounded" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/planes/plane 3.png" class="d-block w-100 rounded" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci dolor unde!</p>
+        <a class="btn btn-primary " id="LearnM3" href="/pages/flight.html" role="button">Learn More</a>
+      </div>
+      </div>
+    </div>
+  <!--------------------------------------THE BUS SECTION--------------------------------------------------->
+<div class="container shadow p-3 mb-5 rounded">
+    <h1 class="text-center h1Sections" id="bus">Bus</h1>
+ <div class="row">
+  <div class="col-5">
+  <div id="carouselExampleInterval" class="carousel slide shadow-lg p-3 mb-5 rounded" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="/img/bus/bus.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="/img/bus/bus1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/img/bus/bus2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+   </div>
+  </div>
+  <div class="col-6">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minima nam saepe nulla necessitatibus adipisci dignissimos fugiat explicabo quos facere!</p>
+    <a class="btn btn-primary"id="LearnM2" href="/pages/bus.html" role="button">Learn More</a>
+  </div>
+ </div>
+</div>
+    <!--------------------------------------TAXI SECTION----------------------------------------------->
+    <div class="container shadow p-3 mb-5 rounded">
+      <h1 class="text-center h1Sections" id="taxi">Taxi</h1>
+   <div class="row">
+    <div class="col-5">
+    <div id="carouselExampleControlsNoTouching" class="carousel slide shadow-lg p-3 mb-5 rounded" data-bs-touch="false" data-bs-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/img/taxi/taxi.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/taxi/taxi1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/taxi/taxi2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="col-6">
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minima nam saepe nulla necessitatibus adipisci dignissimos fugiat explicabo quos facere!</p>
+  <a class="btn btn-primary" id="LearnM1" href="/pages/taxi.html" role="button">Learn More</a>
+</div>
+</div>
+</div>
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" style="background-color: #FF8000;" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="bi bi-arrow-up-circle-fill"></i></a>
+
+    <!------------------------------------FOOTER----------------------------------------------------------->
+<footer class="bg-dark text-center text-lg-start">
+  <!-------------------------------------------------- Grid container -------------------------------------->
+  <div class="container p-4">
+    <!---------------------------------------------------Grid row-------------------------------------------->
+    <div class="row">
+      <!-------------------------------------------------Grid column----------------------------------------->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase Main-h5">Viz Travel</h5>
+
+        <p class="text-light">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+          voluptatem veniam, est atque cumque eum delectus sint!
+        </p>
+      </div>
+      <!-------------------------------------------------Grid column----------------------------------------->
+
+      <!------------------------------------------------ Grid column ---------------------------------------->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase Main-h5">Contacts</h5>
+
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#!" class="text-light">Instagram</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Facebook</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Tweeter</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+      <!-----------------------------------------------------Grid column-------------------------------->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0 Main-h5">Our Socials</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-light">Instagram</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Facebook</a>
+          </li>
+          <li>
+            <a href="#!" class="text-light">Tweater</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2021 Copyright:
+    <a class="text-light" href="$">By: E.M and E.N</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-------------------------------------------------- END OF Footer ----------------------------------------->
+
+
+<!----------------------------------------------THE script tags---------------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
+</html>

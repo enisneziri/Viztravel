@@ -1,0 +1,104 @@
+.video{
+    size: cover;
+    width: 100%;
+    margin-bottom: 50px;
+
+  }
+  html{
+      scroll-behavior:inherit;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-family:'Fjalla One', sans-serif;
+    transition: 0.3s ease;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    margin: 0 00px;
+    padding: 20px 0;
+
+}
+
+ .navbar-nav .nav-link.active,
+ .navbar-nav .nav-link:hover {
+    
+    background:#FF8000;
+    
+}
+  .firstnow {
+      margin-left: 10px;
+  }
+#firstCol{
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+.img-thumbnail:hover{
+    transition: cubic-bezier();
+    width: 100%;
+    transition: width 1.5s;
+    transition: margin-left 0.8s;
+    margin-left: 0;
+}
+.img-thumbnail:hover{
+    width: 97%;
+    margin-left: 10px;
+
+}
+.h1Sections{
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 50px;
+}
+#carouselExampleFade{
+    margin-left: 0;
+}
+
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+#SubReser{
+    background-color: #FF8000;
+}
+#LearnM1{
+    background-color: #FF8000;
+}
+#LearnM2{
+    background-color: #FF8000;
+}
+#LearnM3{
+    background-color: #FF8000;
+}
+#Button-Modal{
+    background-color: #FF8000;
+}
+#form2{
+    display: none;
+}
+.Main-h5{
+    color: #FF8000;
+}
+.h2Sections{
+    font-family: 'Bebas Neue', cursive;
+
+}
+#AirTravel{
+    display: none;
+}
+#SubResers {
+    background-color: #FF8000;
+}
+#ButtonModal{
+    background-color: #FF8000;
+}
+#AllSet{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
